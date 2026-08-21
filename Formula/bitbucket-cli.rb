@@ -5,21 +5,21 @@
 class BitbucketCli < Formula
   desc "A CLI tool for interacting with Bitbucket."
   homepage "https://github.com/FabianSchurig/bitbucket-cli"
-  version "0.19.0"
+  version "0.20.0"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.19.0/bb-cli_0.19.0_darwin_amd64.tar.gz"
-      sha256 "9fa385b8ae5381b80daa80c66102545a179b6d0cd4d287970c0dd3ee74802e15"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.20.0/bb-cli_0.20.0_darwin_amd64.tar.gz"
+      sha256 "1a36b6ac885d5ba468f2aee0bbcacea8b5430bc9f8ab857060129d08b1c279fb"
 
       define_method(:install) do
         bin.install "bb-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.19.0/bb-cli_0.19.0_darwin_arm64.tar.gz"
-      sha256 "62c7f612fcafa2619ea93fc98cc507bfbabe410b9f769ccf15e4482db0348098"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.20.0/bb-cli_0.20.0_darwin_arm64.tar.gz"
+      sha256 "4ea92aa158fac4b262ebe6e97744d45f0d20e0d6f5a72049dc7ac889e2c729f1"
 
       define_method(:install) do
         bin.install "bb-cli"
@@ -29,15 +29,15 @@ class BitbucketCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.19.0/bb-cli_0.19.0_linux_amd64.tar.gz"
-      sha256 "a5111f900eb045cbe1544a179793a14f6f9d66699b6f53019904de837423146a"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.20.0/bb-cli_0.20.0_linux_amd64.tar.gz"
+      sha256 "a0a5b15f1de6b178838a2687a5628de96862df5ff230b6adf4e1ddd1f55b392d"
       define_method(:install) do
         bin.install "bb-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.19.0/bb-cli_0.19.0_linux_arm64.tar.gz"
-      sha256 "631bd79dd2b8243479f2022563e696a7c94d05e8b19951f663a08f287039b85b"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.20.0/bb-cli_0.20.0_linux_arm64.tar.gz"
+      sha256 "45dfd8fea5958804904ee43bd70de5152cbdb9b1cbc646ed74192746f787595f"
       define_method(:install) do
         bin.install "bb-cli"
       end
