@@ -5,21 +5,21 @@
 class BitbucketMcp < Formula
   desc "An MCP server for interacting with Bitbucket via AI agents."
   homepage "https://github.com/FabianSchurig/bitbucket-cli"
-  version "0.21.0"
+  version "0.21.1"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.0/bb-mcp_0.21.0_darwin_amd64.tar.gz"
-      sha256 "2a3fd9f1001574f95fbaf87f4db63b63b768fa5732fd19c0ce8ad67bc0ee11e9"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.1/bb-mcp_0.21.1_darwin_amd64.tar.gz"
+      sha256 "96f3fb7043a127aa2579f2c919fc11e7b45008c04021444756d043c345536432"
 
       define_method(:install) do
         bin.install "bb-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.0/bb-mcp_0.21.0_darwin_arm64.tar.gz"
-      sha256 "35396670d612d1272ab1dad72c41d98f117490889059e8d8abcd55db800a79d1"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.1/bb-mcp_0.21.1_darwin_arm64.tar.gz"
+      sha256 "6da7a12048e24a9bdce16ef8dc91d4e25e28596d4452396748bae6f0c69af7ec"
 
       define_method(:install) do
         bin.install "bb-mcp"
@@ -29,15 +29,15 @@ class BitbucketMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.0/bb-mcp_0.21.0_linux_amd64.tar.gz"
-      sha256 "02506d1e7784cf9ca5192c77102f389c12cca72ce0a3c598646c2d9f798c587b"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.1/bb-mcp_0.21.1_linux_amd64.tar.gz"
+      sha256 "41f1f6cac2901de678a5df605a508320baee867db3be2626ea9398142922aebb"
       define_method(:install) do
         bin.install "bb-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.0/bb-mcp_0.21.0_linux_arm64.tar.gz"
-      sha256 "fe671ed5348c69645826cb77d79c04b5382344dfacb7df928cb560004aaffbfe"
+      url "https://github.com/FabianSchurig/bitbucket-cli/releases/download/v0.21.1/bb-mcp_0.21.1_linux_arm64.tar.gz"
+      sha256 "40cf9a8c87e7ad28a51399e953320f2cff604527df90550ca832212b39ce072b"
       define_method(:install) do
         bin.install "bb-mcp"
       end
